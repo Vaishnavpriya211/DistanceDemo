@@ -71,8 +71,20 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TablViewCell", for: indexPath) as! TablViewCell
         
-        let data = secionalDataSource[indexPath.section].data[indexPath.item]
+        let sectionData = secionalDataSource[indexPath.section]
+        
+        if sectionData.title == "Nearest Store" {
+            cell.backgroundColor = .red
+        } else if sectionData.title == "Other Store" {
+            cell.backgroundColor = .green
+        } else if sectionData.title == "Unavailable Store" {
+            cell.backgroundColor = .blue
+        }
+         
+        let data = sectionData.data[indexPath.item]
+        
         cell.lblTitle.text = String(data)
+        
         
         return cell
     }
