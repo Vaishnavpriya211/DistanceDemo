@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2B1210285B95F8008B80A6 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 6C2B120F285B95F8008B80A6 /* Sentry */; };
+		6C2B1219285F3C93008B80A6 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B1218285F3C93008B80A6 /* DataHelper.m */; };
 		6CFE486B28572FF9002DC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE486A28572FF9002DC791 /* AppDelegate.swift */; };
 		6CFE486D28572FF9002DC791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE486C28572FF9002DC791 /* SceneDelegate.swift */; };
 		6CFE486F28572FF9002DC791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE486E28572FF9002DC791 /* ViewController.swift */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C2B1211285F39F3008B80A6 /* DistanceDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DistanceDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C2B1217285F3C93008B80A6 /* DataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHelper.h; sourceTree = "<group>"; };
+		6C2B1218285F3C93008B80A6 /* DataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
 		6CFE486728572FF9002DC791 /* DistanceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFE486A28572FF9002DC791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFE486C28572FF9002DC791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2B1210285B95F8008B80A6 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,9 @@
 				6CFE487B28572FFA002DC791 /* Info.plist */,
 				6CFE487328572FF9002DC791 /* DistanceDemo.xcdatamodeld */,
 				6CFE488128573044002DC791 /* TablViewCell.swift */,
+				6C2B1211285F39F3008B80A6 /* DistanceDemo-Bridging-Header.h */,
+				6C2B1217285F3C93008B80A6 /* DataHelper.h */,
+				6C2B1218285F3C93008B80A6 /* DataHelper.m */,
 			);
 			path = DistanceDemo;
 			sourceTree = "<group>";
@@ -89,6 +98,9 @@
 			dependencies = (
 			);
 			name = DistanceDemo;
+			packageProductDependencies = (
+				6C2B120F285B95F8008B80A6 /* Sentry */,
+			);
 			productName = DistanceDemo;
 			productReference = 6CFE486728572FF9002DC791 /* DistanceDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +117,7 @@
 				TargetAttributes = {
 					6CFE486628572FF9002DC791 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -117,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 6CFE485E28572FF9002DC791;
+			packageReferences = (
+				6C2B120E285B95F8008B80A6 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			productRefGroup = 6CFE486828572FF9002DC791 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2B1219285F3C93008B80A6 /* DataHelper.m in Sources */,
 				6CFE488228573044002DC791 /* TablViewCell.swift in Sources */,
 				6CFE486F28572FF9002DC791 /* ViewController.swift in Sources */,
 				6CFE487528572FF9002DC791 /* DistanceDemo.xcdatamodeld in Sources */,
@@ -295,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9E5FQU42R9;
@@ -313,6 +331,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sb.DistanceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DistanceDemo/DistanceDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9E5FQU42R9;
@@ -341,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sb.DistanceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DistanceDemo/DistanceDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C2B120E285B95F8008B80A6 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C2B120F285B95F8008B80A6 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C2B120E285B95F8008B80A6 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6CFE487328572FF9002DC791 /* DistanceDemo.xcdatamodeld */ = {
